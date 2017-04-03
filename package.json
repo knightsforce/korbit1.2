@@ -1,0 +1,28 @@
+{
+  "name": "redux-ru-tutorial",
+  "version": "1.0.0",
+  "description": "Dmitriy",
+  "main": "index.js",
+  "author": "Maxim Patsianskiy",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.27.3",
+    "express": "^4.14.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "jquery": "^3.2.0",
+    "less": "^2.7.2",
+    "less-loader": "^3.0.0",
+    "postcss-loader": "^1.3.3",
+    "style-loader": "^0.14.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1"
+  },
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "webpack": "^2.2.1"
+  }
+}

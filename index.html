@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тест 1.2</title>
+    <link href="./public/stylesheets/normalize.css" rel="stylesheet">
+    <link href="./public/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="./public/stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bakcground_header"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4" id="page">
+            <header>
+              <nav id="root_nav">
+                <ul>
+                  <li class="active_elem"><span>ASOS</span></li>
+                  <li><span>MARKETPLACE</span></li>
+                </ul>
+              </nav>
+            </header>
+            <div id="basic">
+              <img src="./public/images/logo.png" id="logo"/>
+              <div id="search">
+                <input id="search_field" type="text" placeholder="Поиск" />
+                <div id="button_search"><img src="./public/images/loupe.png"></div>
+              </div>
+              <div id="authorization">
+                <ul>
+                  <li>Добро пожаловать на ASOS!</li>
+                  <li>Регистрация</li>
+                  <li>Войти</li>
+                </ul>
+              </div>
+              <div id="locale_container">
+                  <div id="locale">
+                    <img src="./public/images/flag_ru.png" id="flag">
+                    <span>руб. RUB</span>
+                    <img src="./public/images/arrow_bottom.png">
+                  </div>
+                  <div id="locale_options">
+                    <div><img src="./public/images/flag_ru.png"/><span>Россия</span></div>
+                    <div>Изменить валюту:</div>
+                    <select id="change_currency">
+                      <option>&#36; USD</option>
+                      <option>&#8364; EUR</option>
+                      <option selected="selected">руб. RUB</option>
+                    </select>
+                    <div>Сайты в других странах</div>
+                    <ul>
+                      <li><a href="#"><img src="./public/images/flag_ru.png"><span>Россия</span></a></li>
+                      <li><a href="#"><img src="./public/images/flag_uk.png"><span>United kingdom</span></a></li>
+                      <li><a href="#"><img src="./public/images/flag_usa.png"><span>United States</span></a></li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <div id="selection">
+            <nav id="product_nav">
+              <ul>
+                <li id="home"><span></span></li>
+                <li><span>Мужское</span></li>
+                <li><span>Женское</span></li>
+                <li><span>Аутлет</span></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="advertising"></div>
+          <div id="offers"></div>
+
+          <div id="content">
+
+            <div id="sort_result">
+              <div id="search_result">Всего найдено <span class="badge"></span></div>
+              <select id="filters">
+                <option value="name" selected="selected">Названию</option>
+                <option value="price_min_max">Цене &#2017;</option>
+                <option value="price_max_min">Цене &#2012;</option>
+                <option value="date_min_max">Дате &#2017;</option>
+                <option value="date_max_min">Дате &#2012;</option>
+              </select> 
+            </div>
+
+              <div class="row">
+                <div id="sort_options" class="col-md-3">
+                      <h3>Сортировать по</h3>
+                </div>
+                <div id="products_container" class="col-md-9">
+                  <div id="navigation">
+                    <ul class="wrap pagination">
+                      <li class="link_elem link_left"><a href="#">1</a></li>
+                      <li class="link_elem spread_left"><a href="#">...</a></li>
+                      <li class="link_elem spread_right"><a href="#">...</a></li>
+                      <li class="link_elem link_right"><a href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>                
+              </div>
+
+              <div id="card_product" class="data_container">
+                <div class="name">Имя</div>
+                <figure>
+                  <img class="image" src="./public/images/products/nike_pre_montreal_premium_leather_trainers_in_pink.jpg"/>
+                </figure>
+                <div class="wrap">Цена: <span class="price"></span></div>
+                <div class="details">
+                  <div class="values text"></div>
+                  <div class="values">Категория: <span class="category"></span></div>
+                  <div class="values">Цвет: <span class="color"></span></div>
+                  <div class="values">Размер: <span class="size"></span></div>
+                  <div class="values">Стиль: <span class="style"></span></div>
+                  <div class="values">Коллекция: <span class="collections"></span></div>
+                </div>
+                <button class="close_elem" type="button">X</button>
+              </div>
+          </div>
+          <div id="warn_block">
+            <div id="warn_head"></div>
+            <div id="warn_body"></div>
+            <button id="warn_ok" class="warn_button btn btn-warning" type="button"></button>
+          </div>
+
+
+          <div id="toast_product" class="data_container">
+            <div class="name">Имя</div>
+            <div class="details">
+              <div class="values text"></div>
+              <div class="values">Цена: <span class="price"></span></div>
+              <div class="values">Категория: <span class="category"></span></div>
+              <div class="values">Цвет: <span class="color"></span></div>
+              <div class="values">Размер: <span class="size"></span></div>
+              <div class="values">Стиль: <span class="style"></span></div>
+              <div class="values">Коллекция: <span class="collections"></span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="actions_product hide_elem">
+      <div>
+          <figure class="view_product">
+            <p></p>
+            <figcaption>Быстрый просмотр</figcaption>
+          </figure>
+          <figure class="save_product">
+            <p></p>
+            <figcaption>Сохранить</figcaption>
+          </figure>
+      </div>
+    </div>
+    <script src="./public/jquery.min.js"></script>
+    <script src="./public/bootstrap.min.js"></script>
+    <script src="./public/index.js"></script>
+  </body>
+</html>
